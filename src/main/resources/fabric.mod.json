@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "cuddlylamp",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Cuddly Lamp",
+  "description": "Makes doors close behind you, creepily! WoOoOOooO! (made for fallfest 1.16)",
   "authors": [
-    "Me!"
+    "TheEpicBlock"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/TheEpicBlock/cuddly-lamp/blob/master/README.md",
+    "sources": "https://github.com/TheEpicBlock/cuddly-lamp"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "LGPL",
+  "icon": "assets/cuddlylamp/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "nl.theepicblock.cuddlylamp.CuddlyLamp"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "cuddlylamp.mixins.json"
   ],
 
   "depends": {
