@@ -10,6 +10,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
@@ -74,6 +76,7 @@ public abstract class MixinPlayerEntity extends PlayerEntity implements PlayerIn
             BlockState state2 = world.getBlockState(pos2);
 
             Util.setDoorOpen(world, state2, pos2, false);
+            this.getServerWorld().playSound(null, pos, SoundEvents.AMBIENT_CAVE, SoundCategory.BLOCKS, 1.0F, 1.0F);
         }
 
     }
