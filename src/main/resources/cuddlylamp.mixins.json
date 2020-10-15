@@ -4,6 +4,8 @@
   "package": "nl.theepicblock.cuddlylamp.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "MixinDoorBlock",
+    "MixinPlayerEntity"
   ],
   "client": [
   ],
